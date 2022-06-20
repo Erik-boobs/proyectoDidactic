@@ -1,0 +1,72 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+h3{
+    font-size: 40px;
+}
+
+header{
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    background-color: #2dd388;
+    align-items: center;
+    padding: 10px;
+    margin-block-end: 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 60px;
+    margin-right: 10px;
+}
+
+#areas{
+    margin-top: 70px;
+}
+
+.d-flex {
+    padding: 20px;
+}
+
+#validar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+#validar button {
+    align-items: center;
+display: flex;
+}
+
+#validar h2{
+    display: flex;
+    align-items: center;
+}
+
+#tabla-areas{
+    align-items: center;
+    margin-block-end: 30px;
+}
+
+thead{
+    text-align: center;
+}
+
+tbody{
+    text-align: center;
+}
+
+#boton-agregar{
+    margin-top: 30px;
+}

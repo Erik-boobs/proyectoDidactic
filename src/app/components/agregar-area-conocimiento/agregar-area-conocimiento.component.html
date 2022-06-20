@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Áreas de Conocimiento</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-12">
+            <header>
+                <a href="" class="logo">
+                    <img src="/assets/pics/logo-didactic.png" alt="Logotipo" width="50" height="50">
+                    <h2>DidacTIC</h2>
+                </a>
+                <nav id="barra">
+                       <h3>Agregar Áreas de Conocimiento</h3>
+                </nav>
+            </header>   
+
+            <section id="areas">
+                <div class="container-md border">
+                    <form id="form" class="d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Buscar área de conocimiento">
+                        <button class="btn btn-primary" type="button">Buscar</button>
+                      </form>
+                      <div id="validar">
+                        <h2>Área de conocimiento 1</h2>
+                            <button type="button" class="btn btn-success">Validar</button>
+                            <button type="button" class="btn btn-danger">Cancelar</button>
+                      </div>     
+    
+                    <table id="tabla-areas" class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Área de conocimiento</th>
+                          <th></th>
+                          <th></th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Área 1</td>
+                          <td><button><i class="fa-solid fa-pencil"></i></button></td>
+                          <td> 
+                            <button type="button" class="btn btn-success btn-sm">Validar</button>
+                            <button type="button" class="btn btn-danger btn-sm">Cancelar</button>
+                        </td>
+                        <td><button type="button" class="btn btn-danger btn-sm">Eliminar</button></td>
+                        </tr>
+                        <tr>
+                          <td>Área 2</td>
+                          <td>
+                            <button><i class="fa-solid fa-pencil"></i></button>
+                          </td>
+                          <td> 
+                            <button type="button" class="btn btn-success btn-sm">Validar</button>
+                            <button type="button" class="btn btn-danger btn-sm">Cancelar</button>
+                          </td>
+                          <td><button type="button" class="btn btn-danger btn-sm">Eliminar</button></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Área 3</td>
+                            <td>
+                              <button><i class="fa-solid fa-pencil"></i></button>
+                            </td>
+                            <td>
+                            <button type="button" class="btn btn-success btn-sm">Validar</button>
+                            <button type="button" class="btn btn-danger btn-sm">Cancelar</button>
+                            </td>
+                              <td><button type="button" class="btn btn-danger btn-sm">Eliminar</button></td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div>
+            </section>
+            
+            <div id="boton-agregar" class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-primary" type="button">Agregar áreas de conocimiento</button>
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

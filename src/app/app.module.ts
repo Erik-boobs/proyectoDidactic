@@ -14,6 +14,10 @@ import { HomeComponent } from './components/home/home.component';
 import { NavegacionComponent } from './components/navegacion/navegacion.component';
 import { PiePaginaComponent } from './components/pie-pagina/pie-pagina.component';
 import { RegistroComponent } from './components/registro/registro.component';
+import { AgregarAreaConocimientoComponent } from './components/agregar-area-conocimiento/agregar-area-conocimiento.component';
+import { ValidarCursoComponent } from './components/validar-curso/validar-curso.component';
+import { FormAgregarCursoComponent } from './components/form-agregar-curso/form-agregar-curso.component';
+import { FormAgregarAreaConoComponent } from './components/form-agregar-area-cono/form-agregar-area-cono.component';
 
 
 @NgModule({
@@ -29,7 +33,11 @@ import { RegistroComponent } from './components/registro/registro.component';
     HomeComponent,
     NavegacionComponent,
     PiePaginaComponent,
-    RegistroComponent
+    RegistroComponent,
+    AgregarAreaConocimientoComponent,
+    ValidarCursoComponent,
+    FormAgregarCursoComponent,
+    FormAgregarAreaConoComponent
   ],
   imports: [
     BrowserModule,

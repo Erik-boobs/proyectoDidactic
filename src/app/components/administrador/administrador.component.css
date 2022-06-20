@@ -1,1 +1,54 @@
-h1{ color: red;}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, sans-serif;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    background-color: #2dd388;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 60px;
+    margin-right: 10px;
+}
+
+#barra a{
+    font-weight: 600;
+    padding-right: 50px;
+}
+
+#barra a:hover{
+    color: black;
+}
+
+#menu-lateral{
+    background: green;
+    text-align: left;
+    width: 250px;
+    height: 340px;
+}
+
+.nav-item a:hover{
+    color: black;
+}
+
+

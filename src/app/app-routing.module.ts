@@ -9,6 +9,10 @@ import { AlumnosComponent } from './components/alumnos/alumnos.component';
 import { LoginComponent } from './components/login/login.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AgregarAreaConocimientoComponent } from './components/agregar-area-conocimiento/agregar-area-conocimiento.component';
+import { FormAgregarAreaConoComponent } from './components/form-agregar-area-cono/form-agregar-area-cono.component';
+import { FormAgregarCursoComponent } from './components/form-agregar-curso/form-agregar-curso.component';
+import { ValidarCursoComponent } from './components/validar-curso/validar-curso.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -21,7 +25,11 @@ const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'',component:HomeComponent},
   {path:'signup',component:LoginComponent},
-  {path:'registro',component:RegistroComponent}
+  {path:'registro',component:RegistroComponent},
+  {path:'agregarAreaCono',component:AgregarAreaConocimientoComponent},
+  {path:'formAgregarAreaCono',component:FormAgregarAreaConoComponent},
+  {path:'formAgregarCurso',component:FormAgregarCursoComponent},
+  {path:'validarCurso',component:ValidarCursoComponent}
 ];
 
 @NgModule({

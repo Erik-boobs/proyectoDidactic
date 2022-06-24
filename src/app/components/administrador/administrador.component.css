@@ -36,6 +36,7 @@ header{
     padding-right: 50px;
 }
 
+
 #barra a:hover{
     color: black;
 }
@@ -44,7 +45,7 @@ header{
     background: green;
     text-align: left;
     width: 250px;
-    height: 340px;
+    height: 500px;
 }
 
 .nav-item a:hover{

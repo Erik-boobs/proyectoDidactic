@@ -16,37 +16,37 @@
 <div class="row">   
     <div class="col-sm-12">
           
-            <section id="menu-lateral">
-              
-              <div class="container-fluid nav flex-column" >
-                
-                <ul class="navbar nav me-auto">
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="/agregarAreaCono">Agregar áreas de conocimiento</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/validarCurso">Validar cursos</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="">Reasignar Instructor</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="">Actualizar datos</a>
-                    </li>
+            <section id="menu-lateral" class="col-sm-12">
+                <div id="menu" class="menuCSS3">
+                  <ul>
+                    <button style="height: 63px; width: 63px; border: 0;"  class="btn btn-outline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">☰</button>
+
                     
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Reportes</a>
-                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                        <li><a class="dropdown-item" href="">Action</a></li>
-                        <li><a class="dropdown-item" href="">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="">Something else here</a></li>
-                      </ul>
-                      
-                    </li>
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                      <div class="offcanvas-body">
+                        <p style="color: black; padding: 5px; cursor: pointer;" routerLink="/agregarAreaCono" class="nav__link">Área de conocimiento</p>
+                        <br>
+                        <p style="color: black; padding: 5px; cursor: pointer;" routerLink="/validarCurso" class="nav__link">Validar curso</p>
+                        <br>
+                        <p style="color: black; padding: 5px; cursor: pointer;" routerLink="/" class="nav__link">Reasignar instructor</p>
+                        <br>
+                        <p style="color: black; padding: 5px; cursor: pointer;" routerLink="/" class="nav__link">Actualizar datos</p>
+                        <br>
+                        <li class="nav-item dropdown-center">
+                          <a class="nav-link dropdown-toggle" id="dropdownCenterBtn" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Reportes</a>
+                       <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
+                          <li><a class="dropdown-item" href="">Action</a></li>
+                          <br>
+                          <li><a class="dropdown-item" href="">Another action</a></li>
+                          <br>  
+                          <li><a class="dropdown-item" href="">Something else here</a></li>
+                        </ul>
+                      </li>
+                      </div>
+                    </div> 
                   </ul>
-                </div>
+                </div> 
             </section>
     </div>
  </div>

@@ -12,19 +12,48 @@
 </head>
 <body>
 
-    <header>
-        <a href="" class="logo">
-            <img src="/assets/pics/logo-didactic.png" alt="Logotipo" width="50" height="50">
-            <h2>DidacTIC</h2>
-        </a>
-        <nav id="barra">
-               <h3>Agregar área de conocimiento</h3>
-        </nav>
-    </header> 
+
+    <div id="menu" class="menuCSS3">
+        <ul>
+          <button style="height: 63px; width: 63px; border: 0;"  class="btn btn-outline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">☰</button>
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel" >
+            <div class="offcanvas-body">
+              
+              <p style="color: black; padding: 5px; cursor: pointer;" routerLink="/validarCurso" class="nav__link">Validar curso</p>
+              <br>
+              <p style="color: black; padding: 5px; cursor: pointer;" routerLink="/" class="nav__link">Reasignar instructor</p>
+              <br>
+              <p style="color: black; padding: 5px; cursor: pointer;" routerLink="/" class="nav__link">Actualizar datos</p>
+              <br>
+              <li class="nav-item dropdown-center">
+                <a class="nav-link dropdown-toggle" id="dropdownCenterBtn" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Reportes</a>
+             <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
+                <li><a class="dropdown-item" href="">Action</a></li>
+                <br>
+                <li><a class="dropdown-item" href="">Another action</a></li>
+                <br>  
+                <li><a class="dropdown-item" href="">Something else here</a></li>
+              </ul>
+            </li>
+            </div>
+          </div> 
+        </ul>
+      </div> 
+
+
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="/agregarAreaCono">Áreas de conocimiento</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/formAgregarAreaCono">Agregar áreas de conocimiento</a>
+        </li>
+      </ul>
 
 
  <section id="registro" class ="form-register">
-    <h2>Formulario agregar área de conocimiento</h2>
+    <h2>Agrega un área de conocimiento</h2>
 
     <div id="cursoN" class="input-group">
         <span class="input-group-text">Área</span>
@@ -64,13 +93,16 @@
           </select>
 
           <button type="button" class="btn btn-primary">Agregar temas</button>
-    </div>                     
+    </div> 
+    
+    <div id="botones">
+        <button class="btn btn-primary" type="submit"><i class="fa-solid fa-floppy-disk"></i></button>
+        <button class="btn btn-danger" type="submit"><i class="fa-solid fa-rectangle-xmark"></i></button>
+        <!-- <input class="btn btn-danger" type="reset" value="Cancelar"> -->
+    </div>
+    
 </section> 
 
-<div id="botones">
-    <button class="btn btn-primary" type="submit"><i class="fa-solid fa-floppy-disk"></i></button>
-    <input class="btn btn-danger" type="reset" value="Cancelar">
-</div>
 
 
 

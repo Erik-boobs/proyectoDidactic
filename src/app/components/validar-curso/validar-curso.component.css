@@ -4,32 +4,24 @@ body{
 
 h3{
     font-size: 40px;
+   
+    
 }
 
-header{
-    display: flex;
-    height: 70px;
-    justify-content: space-between;
-    background-color: #2dd388;
-    align-items: center;
-    padding: 10px;
-    margin-block-end: 20px;
-}
-
-.logo{
-    display: flex;
-    align-items: center;
-}
-
-.logo img{
-    height: 60px;
-    margin-right: 10px;
-}
 
 #tabla{
-        margin-top: 70px;
-
+    /* text-align: center;
+    margin-top: 10px; */
+    margin-top: 50px;
+    margin-block-end: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
 }
+
+
 
 #tabla-areas{
     align-items: center;
@@ -47,14 +39,17 @@ tbody{
 
 #botones{
     /* border: 1px solid black; */
-    padding: 20px 20px;
-    margin: 0px 500px;
+    padding: 20px;
     text-align: center;
   }
   
   #botones button{
       text-align: center;
       margin-right: 10px;
-      padding-left: 50px;
+  }
+
+ 
+  #menu{
+    background-color: gray;
   }
   

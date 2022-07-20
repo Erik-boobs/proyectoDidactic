@@ -78,5 +78,9 @@ header{
 #botones button{
     text-align: center;
     margin-right: 10px;
-    padding-left: 50px;
+    /* padding-left: 50px; */
+}
+
+#menu{
+    background-color: gray;
 }

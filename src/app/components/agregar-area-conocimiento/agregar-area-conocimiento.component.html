@@ -9,20 +9,58 @@
 <body>
     <div class="row">
         <div class="col-sm-12"> 
-            <section id="areas">
-                <div class="container-md border">
-                  <h3>Agregar Áreas de Conocimiento</h3>
+          <div id="menu" class="menuCSS3">
+            <ul>
+              <button style="height: 63px; width: 63px; border: 0;"  class="btn btn-outline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">☰</button>
+              <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel" >
+                <div class="offcanvas-body">
+                  
+                  <p style="color: black; padding: 5px; cursor: pointer;" routerLink="/validarCurso" class="nav__link">Validar curso</p>
+                  <br>
+                  <p style="color: black; padding: 5px; cursor: pointer;" routerLink="/" class="nav__link">Reasignar instructor</p>
+                  <br>
+                  <p style="color: black; padding: 5px; cursor: pointer;" routerLink="/" class="nav__link">Actualizar datos</p>
+                  <br>
+                  <li class="nav-item dropdown-center">
+                    <a class="nav-link dropdown-toggle" id="dropdownCenterBtn" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Reportes</a>
+                 <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
+                    <li><a class="dropdown-item" href="">Action</a></li>
+                    <br>
+                    <li><a class="dropdown-item" href="">Another action</a></li>
+                    <br>  
+                    <li><a class="dropdown-item" href="">Something else here</a></li>
+                  </ul>
+                </li>
+                </div>
+              </div> 
+            </ul>
+          </div> 
+
+
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="/agregarAreaCono">Áreas de conocimiento</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/formAgregarAreaCono">Agregar áreas de conocimiento</a>
+            </li>
+          </ul>
+
+          <section id="areas">
+                <div >
+                  <h3>Áreas de Conocimiento</h3>
                     <form id="form" class="d-flex">
                         <input class="form-control me-2" type="text" placeholder="Buscar área de conocimiento">
-                        <button class="btn btn-primary" type="button">Buscar</button>
+                        <button class="btn btn-primary" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
                       </form>
-                      <div id="validar">
-                        <h2>Área de conocimiento 1</h2>
-                            <button type="button" class="btn btn-success">Validar</button>
-                            <button type="button" class="btn btn-danger">Cancelar</button>
+                      <div id="validar" class="container-md border">
+                        <h2>Validar Área</h2>
+                            <button type="button" class="btn btn-success"><i class="fa-solid fa-square-check"></i></button>
+                            <button type="button" class="btn btn-danger"><i class="fa-solid fa-rectangle-xmark"></i></button>
                       </div>     
     
-                    <table id="tabla-areas" class="table table-bordered">
+                    <table id="tabla-areas" class="table table-striped table-bordered">
                       <thead>
                         <tr>
                           <th>Área de conocimiento</th>
@@ -35,44 +73,40 @@
                         <tr>
                           <td>Área 1</td>
                           <td><a href="/formAgregarCurso"><button><i class="fa-solid fa-pencil"></i></button></a></td>
-                          <td> 
-                            <button type="button" class="btn btn-success btn-sm">Validar</button>
-                            <button type="button" class="btn btn-danger btn-sm">Cancelar</button>
+                          <td id="botones"> 
+                            <button type="button" class="btn btn-success btn-sm"><i class="fa-solid fa-square-check"></i></button>
+                            <button type="button" class="btn btn-danger btn-sm"><i class="fa-solid fa-rectangle-xmark"></i></button>
                         </td>
-                        <td><button type="button" class="btn btn-danger btn-sm">Eliminar</button></td>
+                        <td><button type="button" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash-can"></i></button></td>
                         </tr>
                         <tr>
                           <td>Área 2</td>
                       
                             <td><a href="/formAgregarCurso"><button><i class="fa-solid fa-pencil"></i></button></a></td>
                         
-                          <td> 
-                            <button type="button" class="btn btn-success btn-sm">Validar</button>
-                            <button type="button" class="btn btn-danger btn-sm">Cancelar</button>
+                          <td id="botones"> 
+                            <button type="button" class="btn btn-success btn-sm"><i class="fa-solid fa-square-check"></i></button>
+                            <button type="button" class="btn btn-danger btn-sm"><i class="fa-solid fa-rectangle-xmark"></i></button>
                           </td>
-                          <td><button type="button" class="btn btn-danger btn-sm">Eliminar</button></td>
+                          <td><button type="button" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash-can"></i></button></td>
                         </tr>
                         
                         <tr>
                             <td>Área 3</td>
                             <td><a href="/formAgregarCurso"><button><i class="fa-solid fa-pencil"></i></button></a></td>
-                            <td>
-                            <button type="button" class="btn btn-success btn-sm">Validar</button>
-                            <button type="button" class="btn btn-danger btn-sm">Cancelar</button>
+                            <td id="botones">
+                            <button type="button" class="btn btn-success btn-sm"><i class="fa-solid fa-square-check"></i></button>
+                            <button type="button" class="btn btn-danger btn-sm"><i class="fa-solid fa-rectangle-xmark"></i></button>
                             </td>
-                              <td><button type="button" class="btn btn-danger btn-sm">Eliminar</button></td>
+                              <td><button type="button" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash-can"></i></button></td>
                           </tr>
                       </tbody>
                     </table>
                   </div>
             </section>
-            
-            <div id="boton-agregar" class="d-grid gap-2 col-3 mx-auto">
+            <!-- <div id="boton-agregar" class="d-grid gap-2 col-3 mx-auto">
              <a href="/formAgregarAreaCono"><button class="btn btn-primary" type="button">Agregar áreas de conocimiento</button></a> 
-            </div>
-
-
-
+            </div> -->
         </div>
     </div>
 </body>

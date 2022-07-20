@@ -16,15 +16,6 @@ header{
     margin-block-end: 20px;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-}
-
-.logo img{
-    height: 60px;
-    margin-right: 10px;
-}
 
 #registro{
     /* margin: 50px 50px; */
@@ -38,6 +29,14 @@ header{
 }
 
 #cursoN{
+    padding: 20px;
+}
+
+#curso{
+    padding: 20px;
+}
+
+#instruc{
     padding: 20px;
 }
 
@@ -70,14 +69,17 @@ header{
 
 #botones{
   /* border: 1px solid black; */
-  padding: 20px 20px;
-  margin: 0px 500px;
+  padding: 10px;
+  /* margin: 0px 500px; */
   text-align: center;
 }
 
 #botones button{
     text-align: center;
     margin-right: 10px;
-    padding-left: 50px;
+    /* padding-left: 50px; */
 }
 
+#menu{
+    background-color: gray;
+}
